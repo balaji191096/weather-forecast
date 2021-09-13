@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <i class="fa fa-search" aria-hidden="true" onclick="getData()"></i>
+      <input type="text" autocomplete="on" class="search-box"  id= "city" placeholder="Search for a city..." /> <br>
+      <button onclick="getData()">Get a report</button>
+    </header>
+
+    <main class="container">
+
+      <section class="location">
+        <p id="name"></p>
+        <span id="date1"></span>
+        <span id="time1"></span>
+      </section>
+
+      <div class="current">
+
+        <div id="temp"><span></span></div>
+        <p id="weather"></p>
+        <img src="" id ="icon">
+        <p id="hi-low"></p>
+        <p id="msg"></p>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>

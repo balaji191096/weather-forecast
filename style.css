@@ -1,63 +1,78 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+   
+.app-wrap{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    text-align: center;
+}
+.location{
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#time1{
+        color:rgb(107, 105, 105);
+        padding:15px;
+}
+
+.search-box{
+    width:20rem;
+    height:2rem;
+    font-size:1.2rem;
+    border:3px solid grey;
+    border-radius: 20px;
+    padding: 15px;
+    margin:20px;
+    cursor:text;
+   
+
+}
+.search-box:hover{
+    border-radius:0px ;
+}
+button{
+    color:white;
+    background-color: rgb(76, 181, 223);
+    border-radius: 20px;
+    width:10rem;
+    height:3rem;
+    border:2px solid rgb(76, 181, 223);
+    cursor:pointer;
+   
+}
+.fa-search{
+    transform:translateX(20rem);
+    color:grey;
+    cursor: pointer;
+
+}
+.container{
+    width:40rem;
+    height:auto;
+    background-color:rgb(241, 233, 233);
+    text-align:center;
+    box-shadow: 0.5rem 0.5rem 0.2rem grey;
+    margin:30px;
+    border-radius:20px;
+    padding:10px;
+    font-size:20px;
+
+}
+
+.current{
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
     
+}
